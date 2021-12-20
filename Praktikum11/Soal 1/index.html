@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="RizkyFahrezy 2172018">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial -scale=1.0"> 
+    <title>Type Text</title>
+    <link rel="stylesheet" href="style.css">
+  <style>
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    border-right: 2px solid rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: arial;
+    color: rgb(0, 0, 0);
+}
+  </style>
+</head>
+<body onload="mengetik()"></body>
+    
+    <div id="text"></div> 
+    <div id="button"><input id="angka" onclick="tombol()" type="number" min="1" max="10"> </div> 
+    
+	<script>
+		var i=0, text;
+        text= 'We Love Programming!';
+        
+        
+        function mengetik()
+    {
+        if(i < text.length){
+            
+            document.getElementById('text').innerHTML += text.charAt(i);
+            i++;
+            setTimeout(mengetik, 70)
+            document.querySelector(".text").innerHTML=type.slice(0,a)
+        }
+    }
+    mengetik();
+	</script>
+    
